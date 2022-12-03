@@ -1,12 +1,14 @@
-function consultEnd() {
-  let campo = document.getElementById("input");
-  const input = campo.value;
+  const campo = document.getElementById("input");
   const logradouro = document.querySelector("tr>#campo1");
   const complemento = document.querySelector("tr>#campo2");
   const bairro = document.querySelector("tr>#campo3");
   const localidade = document.querySelector("tr>#campo4");
   const uf = document.querySelector("tr>#campo5");
 
+
+function consultEnd() {
+  const input = campo.value;
+  
   if (input.length !== 8) {
     campo.classList.add('inputVazio')
     campo.setAttribute('placeholder','Campo obrigatório')    
